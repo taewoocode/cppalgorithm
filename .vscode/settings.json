@@ -2,6 +2,7 @@
     "files.associations": {
         "map": "cpp",
         "string": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "vector": "cpp"
     }
 }
