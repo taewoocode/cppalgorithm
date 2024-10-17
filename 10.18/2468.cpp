@@ -4,13 +4,13 @@ int visited[101][101];
 int a[101][101];
 int dy[4] = {-1,0,1,0};
 int dx[4] = {0,1,0,-1};
-int ny,nx,n,m,ret,temp;
+int ny,nx,n,m,ret = 1,temp;
 void dfs(int y, int x, int d){
     visited[y][x] = 1;
     for(int i = 0; i < 4; i++){
         ny = y + dy[i];
         nx = x + dx[i];
-        if(ny < 0 || ny >= n || nx < 0 || nx >= m)
+        if(ny < 0 || ny >= n || nx < 0 || nx >= n)
         continue;
         if(!visited[ny][nx] && a[ny][nx] > d){
             dfs(ny,nx,d);
@@ -33,7 +33,7 @@ int main(){
         fill(&visited[0][0], &visited[0][0] + 101 * 101, 0);
         int cnt = 0;
         for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
+            for(int j = 0; j < n; j++){
                 if(a[i][j] > d && !visited[i][j]){
                     dfs(i,j,d);
                     cnt++;
