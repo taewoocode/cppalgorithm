@@ -5,8 +5,7 @@ int ans;
 int main(){
     cin >> a >> b >> v;
     ret = a - b;
-    ans /= v % ret;
+    ans = (v - a + ret - 1)/ ret + 1;
     cout << ans << '\n';
-
     return 0;
 }
