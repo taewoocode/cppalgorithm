@@ -18,8 +18,8 @@ void go() {
 }
 
 bool cmp(const string &a, const string &b) {
-    // 길이가 같으면 사전식 비교, 길이가 다르면 길이로 비교
-    return (a.size() == b.size()) ? (a < b) : (a.size() < b.size());
+    if(a.size() == b.size()) return a < b;
+    return a.size() < b.size();
 }
 
 int main() {
