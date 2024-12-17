@@ -21,6 +21,7 @@
         "valarray": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "queue": "cpp"
     }
 }
