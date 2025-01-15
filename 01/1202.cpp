@@ -2,7 +2,7 @@
 using namespace std;
 typedef long long ll;
 ll n, k, ret, temp1, temp;
-vector<pair<ll,ll>> v(n);
+vector<pair<ll,ll>> v(n); //보석무게와 가격을 저장해둠
 vector<ll> vv(k);
 
 void fastIO(){
@@ -10,7 +10,6 @@ void fastIO(){
     cin.tie(NULL);
     cout.tie(NULL);
 }
-
 
 int main(){
     fastIO();

@@ -19,6 +19,7 @@ int main(){
         if(currentSum == m){
             count++;
         }
+        hi++;
     }
     cout << count << '\n';
     
