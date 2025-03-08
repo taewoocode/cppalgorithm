@@ -22,6 +22,7 @@
         "iostream": "cpp",
         "istream": "cpp",
         "stack": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "__locale": "cpp"
     }
 }

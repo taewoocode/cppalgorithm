@@ -12,11 +12,13 @@ vector<string> solution(vector<string> players, vector<string> callings) {
     for(int i = 0; i < players.size(); i++){
         player_map[players[i]] = i;
     }
-    
+    //curIDx는 선수의 현재 위치를 저장
     for(string &calling : callings){
         int cur_idx = player_map[calling];
         if(cur_idx > 0){
             string front_player = players[cur_idx - 1];
+
+            //선수의 현재위치와, 앞의 선수를 교환 -> 이름을 부르면 교환이 되기 때문이다.
             swap(players[cur_idx], players[cur_idx - 1]);
             player_map[calling] = cur_idx - 1;
             player_map[front_player] = cur_idx;

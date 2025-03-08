@@ -18,7 +18,7 @@ int solution(vector<int> schedules, vector<vector<int>> timelogs, int startday) 
             // 토요일(6), 일요일(7)은 출근 인정 시각을 체크하지 않음
             if (realDay == 5 || realDay == 6) continue;
             
-            // 실제 출근 시간
+            // 실제 출근 시
             int actualArrivalTime = timelogs[i][j];
             
             // 출근 시간이 늦으면

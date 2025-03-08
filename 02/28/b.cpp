@@ -10,9 +10,9 @@ vector<string> solution(string my_string){
             if(!word.empty()){
                 answer.push_back(word);
                 word = "";
-            } else {
-                word += my_string[i];
-            }
+            } 
+        } else {
+            word += my_string[i];
         }
     }
     if(!word.empty()){
