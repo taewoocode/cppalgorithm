@@ -1,15 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> solution(vector<int> lst){
-    sort(lst.begin(), lst.end());
-    for(auto i : v){
-        cout << i << ' ';
-    }
-
+bool compare(int a, int b){
+    return a > b; // 앞에 숫자가 뒤에 숫자보다 클 때 참이므로 역순정렬이다.
 }
 
-int main()[
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL), cout.tie(NULL);
-    solution()
-]
+vector<int> solution(vector<int> list){
+    sort(list.begin(), list.end(), compare);
+    list.erase(unique(list.begin(), list.end()));
+}
