@@ -26,3 +26,18 @@ int solution(string binomial){ //"43 + 12"
     return 0;
 
 }
+
+
+#include<bits/stdc++.h>
+using namespace std;
+const int n = 6;
+int visited[n];
+vector<int> v[n];
+void dfs(int u){
+    visited[u] = 1;
+    for(auto i : v[u]){
+        if(visited[i] == 0){
+            dfs(i);
+        }
+    }
+}
