@@ -58,7 +58,7 @@ int func5(int n){
     return val;
 }
 
-void vectorFunc1(vector<int>& v){
+void vectorFunc1(vector<int> v){
     v[10] = 7;
 }
 

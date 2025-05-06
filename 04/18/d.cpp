@@ -18,7 +18,6 @@ void insert(int idx, int num, int arr[], int& len){
     len++;
 }
 
-
 #include<bits/stdc++.h>
 using namespace std;
 int main(){

@@ -12,7 +12,6 @@ int countChar(string s){
         }
         if(cnt > 0) answer++;
     }
-    return answer;
 }
 
 int main(){
