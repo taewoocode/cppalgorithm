@@ -2,20 +2,20 @@
 using namespace std;
 int n;
 
-int makeFactorial(int &n){
-    int ret = 1;
+void makeFactorial(int n, int &ret){
+    ret = 1;
     for(int i = 1; i <= n; i++){
         ret *= i;
     }
-    return ret;
+   
 }
 
 int main(){
     cin >> n;
-    int ret = makeFactorial(n);
-    cout << ret << '\n';
-    cout << &ret << '\n';
-    
+    int ret;
+
+    makeFactorial(n,ret);
+    cout << ret;
     return 0;
 }
 
