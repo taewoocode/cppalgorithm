@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int go(int n){
-    if(n == 0) return 0;
+    if(n == 0) return 1;
     return n * go(n - 1);
 }
 
@@ -11,6 +11,7 @@ void FASTIO(){
 }
 
 int main(){
+    FASTIO();
     int n;
     cin >> n;
     cout << go(n) << '\n';
