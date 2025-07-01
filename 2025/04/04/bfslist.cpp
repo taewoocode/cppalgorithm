@@ -6,7 +6,7 @@ queue<int> q;
 int ret;
 int nodeList[] = {10,12,14,16,18,20,22,24};
 
-void dfs(int n){
+void bfs(int n){
     visited[n] = 1;
     q.push(n);
 
@@ -31,7 +31,7 @@ int main(){
     adj[20].push_back(23);
     adj[20].push_back(24);
 
-    dfs(10);
+    bfs(10);
     for(int i : nodeList){
         cout << i << " : " << visited[i] << '\n';
     }

@@ -9,9 +9,7 @@ void bfs(int start){
     q.push(start);
     visited[start] = 1;
     while(q.size()){
-        int current = q.front();
-        q.pop();
-        cout << current << '\n';
+        int current = q.front(); q.pop();
 
         for(int next : graph[current]){
             if(visited[next] == 0){
