@@ -7,7 +7,7 @@ int visited[max_n];//방문배열 현재 노드 방문체크
 int dfs(int n){
     visited[n] = true;
     cout << n << '\n';
-    for(auto next : graph[n]){2,3
+    for(auto next : graph[n]){
         if(visited[next] == 0){
             dfs(next);
         }
