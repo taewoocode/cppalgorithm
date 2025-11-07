@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ptw/cppman/backjoonalgo/07/11/hello'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _emutls_destroy, symObjAddr: 0x0, symBinAddr: 0x1000039C0, symSize: 0x60 }
+  - { offset: 0x228, size: 0x8, addend: 0x0, symName: _emutls_mutex, symObjAddr: 0x2D0, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offset: 0x23E, size: 0x8, addend: 0x0, symName: _emutls_key, symObjAddr: 0x2558, symBinAddr: 0x100008078, symSize: 0x0 }
+  - { offset: 0x254, size: 0x8, addend: 0x0, symName: _emutls_size, symObjAddr: 0x2550, symBinAddr: 0x100008070, symSize: 0x0 }
+  - { offset: 0x26B, size: 0x8, addend: 0x0, symName: ___emutls_register_common, symObjAddr: 0x280, symBinAddr: 0x100003C40, symSize: 0x40 }
+  - { offset: 0x2CA, size: 0x8, addend: 0x0, symName: ___emutls_get_address, symObjAddr: 0x8C, symBinAddr: 0x100003A4C, symSize: 0x1F4 }
+  - { offset: 0x32F, size: 0x8, addend: 0x0, symName: _once.0, symObjAddr: 0x2C0, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x4CE, size: 0x8, addend: 0x0, symName: _emutls_init, symObjAddr: 0x60, symBinAddr: 0x100003A20, symSize: 0x2C }
+  - { offset: 0x4E5, size: 0x8, addend: 0x0, symName: _emutls_init, symObjAddr: 0x60, symBinAddr: 0x100003A20, symSize: 0x2C }
+  - { offset: 0x50C, size: 0x8, addend: 0x0, symName: _emutls_destroy, symObjAddr: 0x0, symBinAddr: 0x1000039C0, symSize: 0x60 }
+  - { offset: 0x65A, size: 0x8, addend: 0x0, symName: __Z11thread_funcPv, symObjAddr: 0x0, symBinAddr: 0x100003C80, symSize: 0x5C }
+  - { offset: 0x76A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x5C, symBinAddr: 0x100003CDC, symSize: 0x64 }
+  - { offset: 0x7AB, size: 0x8, addend: 0x0, symName: __Z11thread_funcPv, symObjAddr: 0x0, symBinAddr: 0x100003C80, symSize: 0x5C }
+...
